@@ -1,4 +1,4 @@
-CREATE TABLE PESSOA (
+CREATE TABLE pessoa (
 	codigo BIGINT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100) NOT NULL, 
 	ativo BOOLEAN NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE PESSOA (
 	
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO PESSOA (nome, ativo) VALUES ('Josielson', true);
-INSERT INTO PESSOA (nome, ativo) VALUES ('Henrique', 1);
-INSERT INTO PESSOA (nome, ativo) VALUES ('Coelhada', 1);
-INSERT INTO PESSOA (nome, ativo) VALUES ('Welber', 1);
+INSERT INTO pessoa (nome, ativo) VALUES ('Josielson', true);
+INSERT INTO pessoa (nome, ativo) VALUES ('Henrique', 1);
+INSERT INTO pessoa (nome, ativo) VALUES ('Coelhada', 1);
+INSERT INTO pessoa (nome, ativo) VALUES ('Welber', 1);
