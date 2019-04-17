@@ -28,14 +28,14 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 			.authorizedGrantTypes("password", "refresh_token") // Password A aplicação recebe o usuário e senha do usuário. E enviar para pegar o access token. Só feito quando você tem confiança na aplicação
 			// REFRESH_TOKEN usado para nos dar um novo access token
 //			.accessTokenValiditySeconds(1800); //Quantos segundos esse token vai ficar ativo 1800 = 30min
-			.accessTokenValiditySeconds(30)
+			.accessTokenValiditySeconds(1800)
 			.refreshTokenValiditySeconds(3600 * 24) // Um dia para expirar o refresh token
 		.and()
 			.withClient("mobile") 
 			.secret("m0b1l30") 
 			.scopes("read") 
 			.authorizedGrantTypes("password", "refresh_token") 
-			.accessTokenValiditySeconds(3600 * 24)
+			.accessTokenValiditySeconds(1800)
 			.refreshTokenValiditySeconds(3600 * 24);
 		
 	}
